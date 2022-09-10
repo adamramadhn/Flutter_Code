@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mycode/home.dart';
 import 'package:mycode/responsive/fitted_box.dart';
 import 'package:mycode/responsive/flexible_expanded.dart';
+import 'package:mycode/responsive/layout_builder.dart';
 import 'package:mycode/responsive/media_query.dart';
 import 'package:mycode/shared_preference/second_page.dart';
 import 'package:mycode/shared_preference/shared_pref.dart';
@@ -23,7 +24,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       initialRoute: '/',
-      // home: const FlexibleExpandedPage(),
       routes: {
         '/': (context) => const HomePage(),
         FittedBoxPage.route: (context) => const FittedBoxPage(),
@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
         MediaQueryPage.route: (context) => const MediaQueryPage(),
         SharedPrefPage.route: (context) => const SharedPrefPage(),
         SecondPage.route: (context) => const SecondPage(),
+        LayoutBuilderPage.route: (context) => const LayoutBuilderPage(),
       },
     );
   }

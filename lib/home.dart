@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mycode/responsive/fitted_box.dart';
 import 'package:mycode/responsive/flexible_expanded.dart';
+import 'package:mycode/responsive/layout_builder.dart';
 import 'package:mycode/responsive/media_query.dart';
 import 'package:mycode/shared_preference/shared_pref.dart';
 
@@ -35,6 +36,11 @@ class HomePage extends StatelessWidget {
               onPressed: () =>
                   Navigator.pushNamed(context, SharedPrefPage.route),
               child: const Text('Shared Preference'),
+            ),
+            ElevatedButton(
+              onPressed: () =>
+                  Navigator.pushNamed(context, LayoutBuilderPage.route),
+              child: const Text('Layout Builder'),
             ),
           ],
         ),
